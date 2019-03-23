@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="image.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="bg">
+
+ <span id ="sim"> <p style="font-size:40px; color:#6ed3cf">Simple Form</p></span>
+
+  <br>
+  <form action="/action_page.php">
+    <p style="font-size:23px; color: #c9af98">
+    <span id= "or">
+    Orasul:
+    </span>
+    <br>
+    <input type="text" name="oras" id="oras">
+    <br>
+    <span id="marc">Marca Masina:</span>
+    <br>
+    <input type="text" name="marca" id="marca">
+    <br>
+    <span id="prob">Probleme:<br></span>
+    <input type="text" name="problem1" id="problem1">
+    <br>
+    <input type="text" name="problem2" id="problem2">
+    <br>
+    <input type="text" name="problem3" id="problem3">
+    <br>
+    <input type="text" name="problem4" id="problem4">
+    <br>
+    <br>
+    <input type="submit" value="Submit" id="SubmitButton">
+    <br>
+    <br>
+    </p>
+  </form> 
+
+</div>
+<img src="ui.jpg" alt="Girl in a jacket" id ="poza">
+<script>
+   document.getElementById("SubmitButton").onclick = function() {
+
+   		var oras = document.getElementById("oras").value;
+   		var LastName = document.getElementById("marca").value;
+   		var problem1 = document.getElementById("problem1").value;
+      var problem2 = document.getElementById("problem2").value;
+      var problem3 = document.getElementById("problem3").value;
+      var problem4 = document.getElementById("problem4").value;
+
+
+   		var OutputString = [oras , LastName , problem1 , problem2 , problem3 , problem4];
+
+   		window.external.setResult(OutputString);
+   		};
+</script>
+
+</body>
+</html>

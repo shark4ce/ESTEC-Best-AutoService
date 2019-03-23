@@ -1,0 +1,44 @@
+#poza {
+	position: absolute;
+	height: 100px;
+	width: 200px;
+
+	left: 75%;
+	top: 75%;
+}
+
+#bg{
+	position: absolute;
+	left: 40%;
+	top:10%;
+}
+
+#marc{
+	position: absolute;
+	left: 10px;
+}
+#or{
+	position: relative;
+	left: 36px;
+}
+#prob{
+	position: relative;
+	left: 26px;
+}
+#sim{
+	position: relative;
+	right: 25px;
+}
+#SubmitButton{
+	position: relative;
+	left: 40px;
+	bottom:15px;
+}
+
+html { 
+  background: url(cars.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
